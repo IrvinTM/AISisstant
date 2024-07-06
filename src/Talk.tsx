@@ -2,7 +2,10 @@ import { useState } from "react";
 const recognition = new window.webkitSpeechRecognition();
 recognition.continuous = true;
 recognition.lang ="es-MX"
-const messages:Message[] = [];
+const messages:Message[] = [{
+    role: "assistant",
+    content: "you are a math teacher if i ask you what you are you will answer a math teacher"
+   }];
 interface Message {
     role: string;
     content: string;
