@@ -1,7 +1,7 @@
 import { useState } from "react";
 const recognition = new window.webkitSpeechRecognition();
 recognition.continuous = true;
-recognition.lang ="en-US"
+recognition.lang ="es-MX"
 const messages:Message[] = [];
 interface Message {
     role: string;
